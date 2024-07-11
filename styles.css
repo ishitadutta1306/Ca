@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;   /*includes padding and border in element's total width and height*/
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Calculator container*/
+#container{
+    background: black;
+    box-shadow: 0 0 5px #d0d0d0;
+    height: 95vh;
+    width: 60vh;
+    padding: 3rem;
+    border-radius: 3.125rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading h1{
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+#input{
+    width: 100%;
+    margin: 1rem 0;
+}
+#input input{
+    background-color: transparent;
+    color: white;
+    height: 4rem;
+    width: 100%;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    box-shadow: 0 0 5px #d0d0d0;
+    outline: none;
+    margin-top: 0.75rem;
+}
+#input input::placeholder{
+    color: white;
+}
+
+/*Calculator buttons container*/
+#btns-container{
+    margin-top: 1rem;
+    width: 100%;
+}
+.rows{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.rows button{
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.num, #decimal, .parenthesis{
+    background-color: #333333;
+    color: white;
+}
+.num:hover{
+    background-color: #4d4d4d;
+}
+#num-zero:hover, #decimal:hover{
+    background-color: #4d4d4d;
+}
+.operator{
+    background-color: #73937E;
+}
+.operator:hover{
+    background-color: #8BAF96;
+}
+#all-clear, #delete-char{
+    background-color: #a5a5a5;
+}
+#all-clear:hover, #delete-char:hover{
+    background-color: #bcbcbc;
+}
